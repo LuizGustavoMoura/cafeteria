@@ -46,7 +46,7 @@
 							<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
 							<label for="senha">Senha</label>
 						</div>
-						<div class="form-floating py-4">
+						<div class="form-floating py-2">
 							<input type="password" class="form-control" name="confirmasenha" id="confirmasenha" placeholder="Confirme sua senha">
 							<label for="confirmasenha">Confirmar senha</label>
 						</div>
