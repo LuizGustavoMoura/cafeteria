@@ -51,7 +51,7 @@
 							<label for="confirmasenha">Confirmar senha</label>
 						</div>
 
-						<button class="btn btn-primary w-100 py-2" type="submit">Entrar</button>
+						<button class="btn btn-primary w-100 py-2" type="submit">Registrar</button>
 					</form>
 				</main>
 			</div>
