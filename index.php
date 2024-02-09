@@ -46,12 +46,12 @@
 							<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
 							<label for="senha">Senha</label>
 						</div>
-						<div class="form-floating py-4">
+						<div class="form-floating py-2">
 							<input type="password" class="form-control" name="confirmasenha" id="confirmasenha" placeholder="Confirme sua senha">
 							<label for="confirmasenha">Confirmar senha</label>
 						</div>
 
-						<button class="btn btn-primary w-100 py-2" type="submit">Entrar</button>
+						<button class="btn btn-primary w-100 py-2" type="submit">Registrar</button>
 					</form>
 				</main>
 			</div>
