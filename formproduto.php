@@ -19,15 +19,15 @@
 						<div class="row">
 							<div class="mb-3 col-6">
 								<label for="produto" class="form-label">Produto</label>
-								<input type="text" class="form-control" name="produto" id="produto" placeholder="Digite o nome do produto">
+								<input type="text" class="shadow form-control" name="produto" id="produto" placeholder="Digite o nome do produto">
 							</div>
 							<div class="mb-3 col-6">
 								<label for="descricao" class="form-label">Descrição</label>
-								<textarea class="form-control" name="descricao" id="descricao" rows="3"></textarea>
+								<textarea class="shadow form-control" name="descricao" id="descricao" rows="3"></textarea>
 							</div>
 							<div class="mb-3">
 								<label for="categoria" class="form-label">Categoria de Produto</label>
-								<select class="form-select form-select-lg" name="categoria" id="categoria">
+								<select class="shadow form-select form-select-lg" name="categoria" id="categoria">
 									<option value="bebidaquente">Bebida Quente</option>
 									<option value="bebidagelada">Bebida Gelada</option>
 									<option value="boloesobremesa">Bolo e Sobremesa</option>
@@ -36,11 +36,11 @@
 							</div>
 							<div class="mb-3 col-6">
 								<label for="estoque" class="form-label">Estoque</label>
-								<input type="number" class="form-control" name="estoque" id="estoque" min="0" max="200" step="1">
+								<input type="number" class="shadow form-control" name="estoque" id="estoque" min="0" max="200" step="1">
 							</div>
 							<div class="mb-3 col-6">
 								<label for="preco" class="form-label">Preço</label>
-								<input type="number" class="form-control" name="preco" id="preco" min="0" max="200" step="1">
+								<input type="number" class="shadow form-control" name="preco" id="preco" min="0" max="200" step="1">
 							</div>
 						</div>
 					</div>
@@ -50,8 +50,8 @@
 			<div class="main">
 				<div class="container">
 					<div class="table-responsive">
-						<table class="table table-striped table-light">
-							<thead>
+						<table class="table table-striped table-light table-hover">
+							<thead class="table-dark">
 								<tr>
 									<th scope="col">Produto</th>
 									<th scope="col">Descrição</th>
@@ -61,7 +61,7 @@
 									<th scope="col">Ações</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody class="table-group-divider">
 								<?php
 								include 'conexao.php';
 								$sql = "SELECT * FROM produtos";
