@@ -127,17 +127,76 @@
 													<div class="modal-content">
 														<div class="modal-header">
 															<h5 class="modal-title" id="modalTitleId">
-																Modal title
+																Deseja realmente editar?
 															</h5>
 															<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 														</div>
-														<div class="modal-body">Body</div>
+														<div class="modal-body">
+															<form action="atualizarcliente.php" method="post">
+																<div class="row">
+																	<div class="mb-3 col-12">
+																		<label for="nome" class="form-label">Nome</label>
+																		<input type="text" class="shadow form-control" name="nome" id="nome" placeholder="Digite o seu nome" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="email" class="form-label">E-mail</label>
+																		<input type="email" class="shadow form-control" name="email" id="email" placeholder="Digite o seu e-mail no formato abc@mail.com" />
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="mb-3 col-12">
+																		<label for="telefone" class="form-label">Telefone</label>
+																		<input type="tel" class="shadow form-control" name="telefone" id="telefone" placeholder="(99) 9 9999-9999" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="cpfcnpj" class="form-label">CPF/CNPJ</label>
+																		<input type="text" class="shadow form-control" name="cpfcnpj" id="cpfcnpj" placeholder="Digite o seu CPF/CNPJ (somente números)" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="cep" class="form-label">CEP</label>
+																		<input type="text" class="shadow form-control" name="cep" id="cep" maxlength="8" onkeyup="viaCEP()" placeholder="Digite o seu CEP (somente números)" />
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="mb-3 col-12">
+																		<label for="logradouro" class="form-label">Logradouro</label>
+																		<input type="text" class="shadow form-control" name="logradouro" id="logradouro" placeholder="Digite o seu logradouro" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="numero" class="form-label">Nº</label>
+																		<input type="text" class="shadow form-control" name="numero" id="numero" placeholder="Digite o número da sua casa" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="complemento" class="form-label">Complemento</label>
+																		<input type="text" class="shadow form-control" name="complemento" id="complemento" placeholder="Digite o complemento" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="bairro" class="form-label">Bairro</label>
+																		<input type="text" class="shadow form-control" name="bairro" id="bairro" placeholder="Digite o seu bairro" />
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="mb-3 col-12">
+																		<label for="cidade" class="form-label">Cidade</label>
+																		<input type="text" class="shadow form-control" name="cidade" id="cidade" placeholder="Digite a sua cidade" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="uf" class="form-label">Estado</label>
+																		<input type="text" class="shadow form-control" name="uf" id="uf" placeholder="Digite o seu estado" />
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="imagem" class="form-label">Logo/Imagem Pessoal</label>
+																		<input type="file" class="shadow form-control" name="imagem" id="imagem" placeholder="Insira sua imagem" />
+																	</div>
+																</div>
+														</div>
 														<div class="modal-footer">
 															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
 																Fechar
 															</button>
 															<button type="button" class="btn btn-primary">Salvar</button>
 														</div>
+														</form>
 													</div>
 												</div>
 											</div>
