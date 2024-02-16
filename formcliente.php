@@ -202,14 +202,14 @@
 											</div>
 
 											<!-- Modal trigger button -->
-											<button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#modalexcluir">
+											<button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#modalexcluircliente">
 												<i class="fa-solid fa-trash"></i>
 												Excluir
 											</button>
 
 											<!-- Modal Body -->
 											<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-											<div class="modal fade" id="modalexcluir" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+											<div class="modal fade" id="modalexcluircliente" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
 												<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
 													<div class="modal-content">
 														<div class="modal-header">
@@ -219,7 +219,7 @@
 															<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 														</div>
 														<div class="modal-body">
-															
+
 														</div>
 														<div class="modal-footer">
 															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -234,12 +234,12 @@
 											<!-- Optional: Place to the bottom of scripts -->
 											<script>
 												const editModal = new bootstrap.Modal(
-													document.getElementById("modaleditar"),
+													document.getElementById("modaleditarcliente"),
 													options,
 												);
 
 												const deleteModal = new bootstrap.Modal(
-													document.getElementById("modalexcluir"),
+													document.getElementById("modalexcluircliente"),
 													options,
 												);
 											</script>

@@ -93,17 +93,47 @@
 													<div class="modal-content">
 														<div class="modal-header">
 															<h5 class="modal-title" id="modalTitleId">
-																Modal title
+																Deseja realmente editar?
 															</h5>
 															<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 														</div>
-														<div class="modal-body">Body</div>
+														<div class="modal-body">
+															<form action="atualizarcliente.php" method="post">
+																<div class="row">
+																	<div class="mb-3 col-12">
+																		<label for="produto" class="form-label">Produto</label>
+																		<input type="text" class="shadow form-control" name="produto" id="produto" placeholder="Digite o nome do produto">
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="descricao" class="form-label">Descrição</label>
+																		<textarea class="shadow form-control" name="descricao" id="descricao" rows="3"></textarea>
+																	</div>
+																	<div class="mb-3">
+																		<label for="categoria" class="form-label">Categoria de Produto</label>
+																		<select class="shadow form-select form-select-lg" name="categoria" id="categoria">
+																			<option value="bebidaquente">Bebida Quente</option>
+																			<option value="bebidagelada">Bebida Gelada</option>
+																			<option value="boloesobremesa">Bolo e Sobremesa</option>
+																			<option value="sanduicheesalgado">Sanduíche e Salgado</option>
+																		</select>
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="estoque" class="form-label">Estoque</label>
+																		<input type="number" class="shadow form-control" name="estoque" id="estoque" min="0" max="200" step="1">
+																	</div>
+																	<div class="mb-3 col-12">
+																		<label for="preco" class="form-label">Preço</label>
+																		<input type="number" class="shadow form-control" name="preco" id="preco" min="0" max="200" step="1">
+																	</div>
+																</div>
+														</div>
 														<div class="modal-footer">
 															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
 																Fechar
 															</button>
 															<button type="button" class="btn btn-primary">Salvar</button>
 														</div>
+														</form>
 													</div>
 												</div>
 											</div>
@@ -121,11 +151,13 @@
 													<div class="modal-content">
 														<div class="modal-header">
 															<h5 class="modal-title" id="modalTitleId">
-																Modal title
+																Deseja realmente excluir?
 															</h5>
 															<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 														</div>
-														<div class="modal-body">Deseja realmente excluir?</div>
+														<div class="modal-body">
+
+														</div>
 														<div class="modal-footer">
 															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
 																Voltar
